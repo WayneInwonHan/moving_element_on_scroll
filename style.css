@@ -6,6 +6,7 @@
 body {
     margin-left: 150px;
     margin-right: 150px;
+    height: 2000px;
 }
 
 .navbar {
@@ -80,21 +81,17 @@ input:focus
 }
 
 .main {
-    background-color: rgb(228, 228, 228);
-    height: 400px;
+    height: 100%;
+    background: none repeat scroll 0 0 rgb(228, 228, 228); ;
+    text-align:center;
+    padding-top:20px;
+    font-size:22px;
 }
 
 .title {
     font-size: 75px;
     text-align: center;
     padding-top: 100px;
-}
-
-.subtitle {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 300;
-    padding-bottom: 50px;
 }
 
 .button-wrapper {
@@ -116,6 +113,9 @@ input:focus
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    position: relative;
+    left: 0px;
+    transition: left 0.75s cubic-bezier(0, 0, 0.58, 1.0);
 }
 
 .button span {
