@@ -4,9 +4,9 @@
 }
 
 body {
-    margin-left: 150px;
-    margin-right: 150px;
-    height: 2000px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 1700px;
     font-family: Montserrat,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -83,10 +83,10 @@ input:focus
 }
 
 .main {
-    height: 100%;
+    height: 500px;
     background: none repeat scroll 0 0 rgb(228, 228, 228); ;
     text-align:center;
-    padding-top:20px;
+    margin-top:20px;
     font-size:22px;
 }
 
@@ -102,7 +102,7 @@ input:focus
 }
 
 .button-wrapper {
-    position: inherit;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,30 +114,35 @@ input:focus
     background-color: black;
     color: #FFFFFF;
     font-size: 15px;
+    left: 43%;
+    top: 50%;
     height: 50px;
     width: 200px;
     overflow: hidden;
-    margin: 20px;
     transform: translateZ(0);
     transition: all .5s ease-out;
     cursor: pointer;
     position: fixed;
     border-radius: 25px;
+    
 }
 
 .button span {
+    left:75px;
+    bottom: 17.5px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     transition: 0.5s;
+    font-weight: bold;
 }
 
 #git-icon {
+    position: absolute;
+    left:15px;
+    bottom: 15px;
     display: none;
     height: 50px;
     width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .button span:after {
@@ -159,8 +164,7 @@ input:focus
 }
 
 .content {
-    background-color: rgb(228, 228, 228);
+    background-color: black;
     margin-top:20px;
-    margin-bottom: 100px;
-    height: 200px;
+    height: 1000px;
 }

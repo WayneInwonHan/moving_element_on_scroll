@@ -5,11 +5,11 @@ window.addEventListener('scroll', () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
 
-    if (Math.ceil(scrolled) > 350) {
+    if (Math.ceil(scrolled) > 150) {
         changeFlt()
         
     }
-    if (Math.ceil(scrolled) < 350) {
+    if (Math.ceil(scrolled) < 150) {
         changeBtn()
     }
 })
@@ -19,7 +19,7 @@ function changeFlt() {
     let txt = document.querySelector("#btn-text");
     let icon = document.querySelector("#git-icon");
 
-    ele.style.left='90%';
+    ele.style.left='92.5%';
     ele.style.top='85%';
     ele.style.width='75px';
     ele.style.height='75px';
@@ -35,8 +35,8 @@ function changeBtn() {
     let txt = document.querySelector("#btn-text");
     let icon = document.querySelector("#git-icon");
 
-    ele.style.left='0%';
-    ele.style.top='0%';
+    ele.style.left='43.25%';
+    ele.style.top='50.00%';
     ele.style.width='200px';
     ele.style.height='50px';
     ele.style.backgroundColor="black";
