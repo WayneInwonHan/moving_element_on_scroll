@@ -7,6 +7,8 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     height: 2000px;
+    font-family: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 .navbar {
@@ -94,53 +96,66 @@ input:focus
     padding-top: 100px;
 }
 
+.subtitle {
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .button-wrapper {
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
+    box-shadow: 2px 2px 3px #999;
     border: none;
+    background-color: black;
     color: #FFFFFF;
-    text-align: center;
     font-size: 15px;
-    padding: 10px;
+    height: 50px;
     width: 200px;
-    transition: all 0.5s;
+    overflow: hidden;
+    margin: 20px;
+    transform: translateZ(0);
+    transition: all .5s ease-out;
     cursor: pointer;
-    margin: 5px;
-    position: relative;
-    left: 0px;
-    transition: left 0.75s cubic-bezier(0, 0, 0.58, 1.0);
+    position: fixed;
+    border-radius: 25px;
 }
 
 .button span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+#git-icon {
+    display: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .button:hover span {
-padding-right: 25px;
+    padding-right: 25px;
 }
 
 .button:hover span:after {
-opacity: 1;
-right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 .content {
@@ -148,25 +163,4 @@ right: 0;
     margin-top:20px;
     margin-bottom: 100px;
     height: 200px;
-}
-
-.blank {
-    height: 500px;
-}
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:black;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.my-float{
-	margin-top:22px;
 }
