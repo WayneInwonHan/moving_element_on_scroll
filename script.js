@@ -7,10 +7,12 @@ window.addEventListener('scroll', () => {
 
     if (Math.ceil(scrolled) > 150) {
         changeFlt()
+        move_out()
         
     }
     if (Math.ceil(scrolled) < 150) {
         changeBtn()
+        move_in()
     }
 })
 
@@ -43,4 +45,20 @@ function changeBtn() {
     ele.style.borderRadius='25px';
     txt.style.display="inline";
     icon.style.display="none";
+}
+
+function move_in() {
+    let left_curtain = document.querySelector("#curtain-left");
+    let right_curtain = document.querySelector("#curtain-right");
+
+    left_curtain.style.left='20%';
+    right_curtain.style.right='20%';
+}
+
+function move_out() {
+    let left_curtain = document.querySelector("#curtain-left");
+    let right_curtain = document.querySelector("#curtain-right");
+
+    left_curtain.style.left='0%';
+    right_curtain.style.right='0%';
 }
